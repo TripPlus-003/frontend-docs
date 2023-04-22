@@ -1,9 +1,12 @@
 lockfileVersion: '6.0'
 
 devDependencies:
+  '@types/node':
+    specifier: ^18.15.13
+    version: 18.15.13
   vitepress:
     specifier: 1.0.0-alpha.73
-    version: 1.0.0-alpha.73(@algolia/client-search@4.17.0)
+    version: 1.0.0-alpha.73(@algolia/client-search@4.17.0)(@types/node@18.15.13)
 
 packages:
 
@@ -381,6 +384,10 @@ packages:
     dev: true
     optional: true
 
+  /@types/node@18.15.13:
+    resolution: {integrity: sha512-N+0kuo9KgrUQ1Sn/ifDXsvg0TTleP7rIy4zOBGECxAljqvqfqpTfzx0Q1NUedOixRMBfe2Whhb056a42cWs26Q==}
+    dev: true
+
   /@types/web-bluetooth@0.0.16:
     resolution: {integrity: sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==}
     dev: true
@@ -392,7 +399,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.3.1
+      vite: 4.3.1(@types/node@18.15.13)
       vue: 3.2.47
     dev: true
 
@@ -659,7 +666,7 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /vite@4.3.1:
+  /vite@4.3.1(@types/node@18.15.13):
     resolution: {integrity: sha512-EPmfPLAI79Z/RofuMvkIS0Yr091T2ReUoXQqc5ppBX/sjFRhHKiPPF/R46cTdoci/XgeQpB23diiJxq5w30vdg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -684,6 +691,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 18.15.13
       esbuild: 0.17.17
       postcss: 8.4.23
       rollup: 3.20.7
@@ -691,7 +699,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress@1.0.0-alpha.73(@algolia/client-search@4.17.0):
+  /vitepress@1.0.0-alpha.73(@algolia/client-search@4.17.0)(@types/node@18.15.13):
     resolution: {integrity: sha512-BWK7b5yYxdA3SeBnUV+ly8vJU2MFcQhjooycLDc2AsSd07uGp+WO6J6gBmjwHuOz5hgcNa+/VxGWKKwBycdbnA==}
     hasBin: true
     dependencies:
@@ -704,7 +712,7 @@ packages:
       mark.js: 8.11.1
       minisearch: 6.0.1
       shiki: 0.14.1
-      vite: 4.3.1
+      vite: 4.3.1(@types/node@18.15.13)
       vue: 3.2.47
     transitivePeerDependencies:
       - '@algolia/client-search'

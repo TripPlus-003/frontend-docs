@@ -5,14 +5,11 @@ layout: home
 hero:
   name: "tripplus-docs"
   text: "frontend documents"
-  tagline: My great project tagline
+  tagline: 基於 Next.js + TS + TailwindCSS + Chakar UI
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 開始
+      link: /guide/
 
 features:
   - title: Feature A
