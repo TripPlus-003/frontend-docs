@@ -19,11 +19,18 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
           cache: npm
-      - run: npm ci
+      - name: Pnpm
+        uses: pnpm/action-setup@v2
+        id: pnpm-install
+        with:
+            version: 7
+            run_install: true
+      - name: Install Dependence
+        run: pnpm install --frozen-lockfile
       - name: Build
-        run: npm run docs:build
+        run: pnpm run docs:build
       - uses: actions/configure-pages@v2
       - uses: actions/upload-pages-artifact@v1
         with:
