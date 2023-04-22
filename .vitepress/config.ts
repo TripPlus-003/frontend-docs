@@ -6,6 +6,7 @@ export default defineConfig({
   title: "tripplus-docs",
   description: "frontend documents",
   srcDir: `${path.resolve(process.cwd())}/src`,
+  base: '/frontend-docs/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
