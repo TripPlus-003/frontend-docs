@@ -50,6 +50,29 @@ pnpm install
 pnpm prepare
 ```
 
+### Commit
+
+::: tip
+使用 commitLint 規範 commit 的格式
+:::
+
+- **build**: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+- **ci**: 持續整合 (Continuous integration)
+- **docs**:文件（documentation）
+- **feat**: 新增或修改功能（feature）
+- **fix**: 修補 bug（bug fix）
+- **perf**: 改善效能 (Optimization/performance improvement)
+- **refactor**: 重構
+    - 不是新增功能，也非修補 bug 的程式碼變動
+- **test**: Adding missing tests or correcting existing tests
+- **style**: 與格式有關
+    - 不影響程式碼運行的變動，例如：white-space, formatting, missing semi colons
+- **workflow**: 工作流改善 (Workflow improvements)
+- **types**:  改變檔案的類型定義 (Type definition file changes)
+- **chore**: maintain
+    - 不影響程式碼運行，建構程序或輔助工具的變動，例如修改 config、Grunt Task 任務管理工具
+- **revert**: 撤銷回覆先前的 commit
+
 ### npm scripts
 
 ```json
@@ -69,4 +92,18 @@ pnpm prepare
     // 初始化 husky
     "prepare": "husky install"
   }
+```
+
+## Docker
+
+### build
+
+```bash
+docker build -t nextjs-docker .
+```
+
+### run
+
+```bash
+docker run -d -p 80:3000 --name nextjs-docker nextjs-docker
 ```
