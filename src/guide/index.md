@@ -50,7 +50,15 @@ pnpm install
 pnpm prepare
 ```
 
-### Commit
+## 環境變數設定
+
+`.env.development.local`: 開發階段的環境變數
+
+`.env.production.local`: 編譯階段的環境變數
+
+`.env.local`: 通用環境變數，會覆蓋上述的環境變數
+
+## Commit
 
 ::: tip
 使用 commitLint 規範 commit 的格式
