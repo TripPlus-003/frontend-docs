@@ -18,7 +18,8 @@ export default defineConfig({
         text: 'Guide',
         items: [
           { text: 'Getting start', link: '/guide/' },
-          { text: 'System request', link: '/guide/request' }
+          { text: 'System request', link: '/guide/request' },
+          { text: 'Layout', link: '/guide/layout' }
         ]
       }
     ],
