@@ -20,6 +20,7 @@ export default defineConfig({
         text: 'Guide',
         items: [
           { text: 'Getting start', link: '/guide/' },
+          { text: 'System environment', link: '/guide/environment' },
           { text: 'System request', link: '/guide/request' },
           { text: 'Layout', link: '/guide/layout' }
         ]
