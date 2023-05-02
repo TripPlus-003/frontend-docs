@@ -22,6 +22,8 @@ layout: doc
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - 程式碼規範
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - 程式碼格式化
 - [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) - 顯示導入路徑
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) - 顯示 tailwind css 語法
+- [Nextjs snippets](https://marketplace.visualstudio.com/items?itemName=PulkitGangwar.nextjs-snippets) - Next.js 語法快捷
 
 ## 安裝
 
@@ -32,6 +34,7 @@ layout: doc
 ### 安装 pnpm
 
 Node.js > 16 版本
+
 ```bash
 corepack enable
 ```
@@ -52,11 +55,7 @@ pnpm prepare
 
 ## 環境變數設定
 
-`.env.development.local`: 開發階段的環境變數
-
-`.env.production.local`: 編譯階段的環境變數
-
-`.env.local`: 通用環境變數，會覆蓋上述的環境變數
+[環境變數設定](/guide/environment)
 
 ## Commit
 
@@ -71,35 +70,35 @@ pnpm prepare
 - **fix**: 修補 bug（bug fix）
 - **perf**: 改善效能 (Optimization/performance improvement)
 - **refactor**: 重構
-    - 不是新增功能，也非修補 bug 的程式碼變動
+  - 不是新增功能，也非修補 bug 的程式碼變動
 - **test**: Adding missing tests or correcting existing tests
 - **style**: 與格式有關
-    - 不影響程式碼運行的變動，例如：white-space, formatting, missing semi colons
+  - 不影響程式碼運行的變動，例如：white-space, formatting, missing semi colons
 - **workflow**: 工作流改善 (Workflow improvements)
-- **types**:  改變檔案的類型定義 (Type definition file changes)
+- **types**: 改變檔案的類型定義 (Type definition file changes)
 - **chore**: maintain
-    - 不影響程式碼運行，建構程序或輔助工具的變動，例如修改 config、Grunt Task 任務管理工具
+  - 不影響程式碼運行，建構程序或輔助工具的變動，例如修改 config、Grunt Task 任務管理工具
 - **revert**: 撤銷回覆先前的 commit
 
 ### npm scripts
 
 ```json
 {
-    // 本地執行(dev環境)
-    "dev": "next dev",
-    // 編譯
-    "build": "next build",
-    // 啟動編譯後 server
-    "start": "next start",
-    // 檢查程式碼規範
-    "lint": "next lint",
-    // 檢查程式碼規範(only staged)
-    "lint:lint-staged": "lint-staged",
-    // 格式化程式碼
-    "format": "prettier --write \"./**/*.{html,tsx,jsx,ts,js,json,md}\"",
-    // 初始化 husky
-    "prepare": "husky install"
-  }
+  // 本地執行(dev環境)
+  "dev": "next dev",
+  // 編譯
+  "build": "next build",
+  // 啟動編譯後 server
+  "start": "next start",
+  // 檢查程式碼規範
+  "lint": "next lint",
+  // 檢查程式碼規範(only staged)
+  "lint:lint-staged": "lint-staged",
+  // 格式化程式碼
+  "format": "prettier --write \"./**/*.{html,tsx,jsx,ts,js,json,md}\"",
+  // 初始化 husky
+  "prepare": "husky install"
+}
 ```
 
 ## Docker
